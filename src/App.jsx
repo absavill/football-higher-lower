@@ -346,7 +346,7 @@ export default function App() {
           :`radial-gradient(ellipse 90% 40% at 50% 0%,${ac}08 0%,transparent 60%)`,
         transition:"background 0.8s"}}/>
       {mode?.wcMode&&<div style={{position:"fixed",top:0,left:0,right:0,height:"2px",background:"linear-gradient(90deg,#009C3B,#FFDF00,#CC0001,#002868,#BF0A30)",opacity:0.7,zIndex:10}}/>}
-      <div style={{width:"100%",maxWidth:"860px",zIndex:1,marginBottom:"8px"}}>
+      <div style={{width:"100%",maxWidth:"1200px",zIndex:1,marginBottom:"8px"}}>
         <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",gap:"8px"}}>
           <button onClick={()=>setScreen("menu")} style={{background:"transparent",border:"1px solid #1a2535",color:"#556",padding:"5px 10px",fontSize:"10px",letterSpacing:"2px",cursor:"pointer",borderRadius:"6px",fontFamily:"'Bebas Neue',Impact,sans-serif",whiteSpace:"nowrap"}}>← MODES</button>
           <div style={{textAlign:"center",flex:1}}>
@@ -384,7 +384,7 @@ export default function App() {
           modeLabel={mode?.label}
         />
       ):known&&mystery&&(
-        <div style={{zIndex:1,width:"100%",maxWidth:"860px"}}>
+        <div style={{zIndex:1,width:"100%",maxWidth:"1200px"}}>
           <div style={{textAlign:"center",marginBottom:"7px"}}>
             <span style={{display:"inline-block",background:mode?.wcMode?"rgba(255,215,0,0.1)":`${ac}12`,border:`1px solid ${mode?.wcMode?"rgba(255,215,0,0.5)":ac+"40"}`,color:mode?.wcMode?"#FFD700":ac,padding:"2px 12px",borderRadius:"20px",fontSize:"9px",letterSpacing:"3px",transition:"all 0.4s",textShadow:mode?.wcMode?"0 0 12px rgba(255,215,0,0.4)":"none"}}>{sm.icon} {sm.label.toUpperCase()}{mode?.wcMode&&" 🌍"}</span>
           </div>
